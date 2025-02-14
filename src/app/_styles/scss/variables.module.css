@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+:export {
+  accentColor: rgb(188, 255, 0);
+  darkColor: rgb(0, 0, 0);
+  lightColor: rgb(255, 255, 255);
+}/*# sourceMappingURL=variables.module.css.map */
