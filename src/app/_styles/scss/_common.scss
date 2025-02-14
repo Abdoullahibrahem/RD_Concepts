@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   color: $dt-70;
   line-height: 170%;
+  background-color: $dark;
   /*overscroll-behavior: none;
     scroll-behavior: smooth;*/
 
@@ -548,6 +549,41 @@ button
 
   &:hover {
     filter: brightness(110%);
+  }
+}
+.mil-button-secondary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0 40px;
+  height: 40px;
+  font-weight: 600;
+  transition: $t-sm;
+  font-size: 16px;
+  border-radius: 18px;
+
+  &.mil-transparent-button {
+    background-color: transparent;
+    border: solid 1px $dark;
+  }
+
+  &.mil-fw {
+    width: 100%;
+  }
+
+  &.mil-sm {
+    padding: 0 20px;
+    height: 40px;
+  }
+
+  &:hover {
+    // filter: brightness(110%);
+    background-color: #ffffff;
+    color: $dark;
   }
 }
 

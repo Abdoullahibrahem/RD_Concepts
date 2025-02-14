@@ -43,8 +43,6 @@ background grid
   display: flex;
   justify-content: center;
   opacity: 0.3;
-  border-left: solid 1px #545454;
-  border-right: solid 1px #545454;
 
   &:before {
     content: "";
@@ -2893,4 +2891,13 @@ load more
   justify-content: end;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+/* ---------------------------- About Section ---------------------------- */
+.about-flex {
+  display: flex;
+  gap: 20px;
+}
+.about-more-btn {
+  background-color: transparent;
 }

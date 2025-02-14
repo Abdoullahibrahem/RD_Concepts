@@ -14,7 +14,7 @@ const HeroOne = () => {
   return (
     <>
       {/* banner */}
-      <section className="mil-banner">
+      <section className="mil-banner mil-mb-120">
         <img
           src={Data.bg_image}
           className="mil-bg-img mil-scale"
@@ -31,7 +31,7 @@ const HeroOne = () => {
               <div className="col-xl-9">
                 <div className="mil-mb-30 mt-5">
                   <h1
-                    className="mil-light mil-h2"
+                    className="mil-light mil-h1"
                     dangerouslySetInnerHTML={{ __html: Data.title }}
                   />
                 </div>
@@ -43,7 +43,7 @@ const HeroOne = () => {
                     ornare. Mauris lectus ut lectus placerat vestibulum vehicula
                     lorem tortor porttitor.
                   </p>
-                  <a href="#" className="glass-cta">
+                  <a href="#" className="glass-cta mt-2">
                     Get contact
                   </a>
                 </div>

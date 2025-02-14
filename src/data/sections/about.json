@@ -1,17 +1,31 @@
 {
-    "image": {
-        "url": "/img/photo/2.jpg",
-        "alt": "img"
-    },
-    "number": {
-        "value": "17",
-        "label": "<span class=\"mil-marker\">Years</span> of <br/>successful <br/>work"
-    },
-    "title": "Great experience",
-    "subtitle": "About Studio",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida.",
-    "button": {
-        "link": "https://www.youtube.com/watch?v=HR4giV4oUjI",
-        "label": "Watch video"
-    }
+  "image1": {
+    "url": "/img/photo/7.jpg",
+    "alt": "About_RD_Img1",
+    "width": 286,
+    "height": 446
+  },
+  "image2": {
+    "url": "/img/photo/9.jpg",
+    "alt": "About_RD_Img2",
+    "width": 286,
+    "height": 446
+  },
+  "image3": {
+    "url": "/img/photo/13.jpg",
+    "alt": "About_RD_Img3",
+    "width": 285,
+    "height": 223
+  },
+  "number": {
+    "value": "17",
+    "label": "<span class=\"mil-marker\">Years</span> of <br/>successful <br/>work"
+  },
+  "title": "About RD",
+  "subtitle": "About Studio",
+  "description": "Lorem ipsum dolor sit amet consectetur. Justo vitae volutpat mi nulla. Tincidunt proin commodo velit elementum et. Non at tempor ultrices facilisis sagittis sodales. Senectus malesuada arcu consequat pulvinar malesuada feugiat. Tincidunt purus malesuada non nisl tortor elit. Lorem duis cursus quisque bibendum lectus. Diam donec laoreet ",
+  "button": {
+    "link": "https://www.youtube.com/watch?v=HR4giV4oUjI",
+    "label": "Watch video"
+  }
 }
