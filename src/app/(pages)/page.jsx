@@ -38,11 +38,11 @@ async function Home1() {
       {/* <PartnersSlider /> */}
       <AboutSection />
       {/* <IdeasSection /> */}
-      {/* <ServicesSection />
-      <AdvantagesSection /> */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <ServicesSection />
+      {/* <AdvantagesSection />  */}
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <LatestProjectsSection projects={projects} />
-      </Suspense>
+      </Suspense> */}
       <HowWeWorkSection />
       <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSection posts={posts} />

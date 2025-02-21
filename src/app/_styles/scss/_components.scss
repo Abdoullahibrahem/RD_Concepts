@@ -2901,3 +2901,35 @@ load more
 .about-more-btn {
   background-color: transparent;
 }
+.gap-5 {
+  gap: 3rem;
+}
+
+/* ---------------------------- Services Section ---------------------------- */
+.services_section {
+  color: $light;
+}
+h2,
+h3 {
+  color: $light;
+}
+h3 {
+  color: $light;
+  font-size: 31px;
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    width: 50%;
+  }
+}

@@ -1,27 +1,65 @@
 {
-    "title": "What We Do",
-    "subtitle": "Services",
-    "items": [
-        {
-            "icon": "/img/icons/3.svg",
-            "num": "01.",
-            "title": "Interior Decor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore aliqua.",
-            "link": "/services/service-1"
-        },
-        {
-            "icon": "/img/icons/5.svg",
-            "num": "02.",
-            "title": "Interior Decor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore aliqua.",
-            "link": "/services/service-2"
-        },
-        {
-            "icon": "/img/icons/4.svg",
-            "num": "03.",
-            "title": "Interior Decor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore aliqua.",
-            "link": "/services/service-3"
-        }
-    ]
+  "title": "Services",
+
+  "subtitle1": "Interior Design",
+  "decription1": "Lorem ipsum dolor sit amet consectetur. Euismod lacinia consequat orci euismod nullam leo integer consequat vel. Sed feugiat eget id integer ornare. Nisl scelerisque viverra amet tincidunt tincidunt malesuada et nunc placerat. Pretium duis proin mattis sit tortor faucibus bibendum amet.",
+  "item1": [
+    {
+      "image1": {
+        "url": "/img/photo/service1_Img1.jpg",
+        "alt": "About_RD_Img1",
+        "width": 286,
+        "height": 446
+      }
+    },
+    {
+      "image2": {
+        "url": "/img/photo/service1_Img2.jpg",
+        "alt": "About_RD_Img2",
+        "width": 286,
+        "height": 446
+      }
+    }
+  ],
+
+  "subtitle2": "Exterior Design",
+  "decription2": "Lorem ipsum dolor sit amet consectetur. Euismod lacinia consequat orci euismod nullam leo integer consequat vel. Sed feugiat eget id integer ornare. Nisl scelerisque viverra amet tincidunt tincidunt malesuada et nunc placerat. Pretium duis proin mattis sit tortor faucibus bibendum amet.",
+  "item2": [
+    {
+      "image1": {
+        "url": "/img/photo/service2-Img1.jpg",
+        "alt": "About_RD_Img1",
+        "width": 286,
+        "height": 446
+      }
+    },
+    {
+      "image2": {
+        "url": "/img/photo/service2-Img2.jpg",
+        "alt": "About_RD_Img2",
+        "width": 286,
+        "height": 446
+      }
+    }
+  ],
+  "subtitle3": "Branding",
+  "decription3": "Lorem ipsum dolor sit amet consectetur. Euismod lacinia consequat orci euismod nullam leo integer consequat vel. Sed feugiat eget id integer ornare. Nisl scelerisque viverra amet tincidunt tincidunt malesuada et nunc placerat. Pretium duis proin mattis sit tortor faucibus bibendum amet.",
+  "item3": [
+    {
+      "image1": {
+        "url": "/img/photo/service3-Img1.jpg",
+        "alt": "About_RD_Img1",
+        "width": 286,
+        "height": 446
+      }
+    },
+    {
+      "image2": {
+        "url": "/img/photo/service3-Img2.jpg",
+        "alt": "About_RD_Img2",
+        "width": 286,
+        "height": 446
+      }
+    }
+  ]
 }

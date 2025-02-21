@@ -6,6 +6,8 @@ import Data from "@data/sections/about.json";
 import "react-modal-video/css/modal-video.css";
 import Image from "next/image";
 import Link from "next/link";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const AboutSection = () => {
   const [isOpen, setOpen] = useState(false);
@@ -44,7 +46,7 @@ const AboutSection = () => {
                 height={Data.image2.height}
               />
             </div>
-            <div className="">
+            <div className="d-flex flex-column gap-5">
               <div className="d-flex align-items-center">
                 <Image
                   src={Data.image3.url}
@@ -55,6 +57,92 @@ const AboutSection = () => {
                 <Link href="/" className="mil-button-secondary ms-5">
                   Learn More
                 </Link>
+              </div>
+              <div className="d-flex justify-content-between ">
+                <div style={{ width: 120, height: 120 }}>
+                  {/* Adjust size here */}
+                  <CircularProgressbar
+                    value={70}
+                    text={`${30}+`}
+                    strokeWidth={3}
+                    counterClockwise
+                    styles={{
+                      path: { stroke: "#fefefe" },
+                      trail: { stroke: "#1e1e1e" },
+                      text: {
+                        fill: "#fefefe",
+                        fontSize: "24px",
+                        fontWeight: 900,
+                      },
+                    }}
+                  />
+                  <p
+                    style={{
+                      textAlign: "center",
+                      fontSize: "14px",
+                      color: "#fefefe",
+                      marginTop: "5px",
+                    }}
+                  >
+                    Residential projects
+                  </p>
+                </div>
+                <div style={{ width: 120, height: 120 }}>
+                  {/* Adjust size here */}
+                  <CircularProgressbar
+                    value={85}
+                    text={`${150}+`}
+                    strokeWidth={3}
+                    counterClockwise
+                    styles={{
+                      path: { stroke: "#fefefe" },
+                      trail: { stroke: "#1e1e1e" },
+                      text: {
+                        fill: "#fefefe",
+                        fontSize: "24px",
+                        fontWeight: 900,
+                      },
+                    }}
+                  />
+                  <p
+                    style={{
+                      textAlign: "center",
+                      fontSize: "14px",
+                      color: "#fefefe",
+                      marginTop: "5px",
+                    }}
+                  >
+                    Commercial projects
+                  </p>
+                </div>
+                <div style={{ width: 120, height: 120 }}>
+                  {/* Adjust size here */}
+                  <CircularProgressbar
+                    value={80}
+                    text={`${80}+`}
+                    strokeWidth={3}
+                    counterClockwise
+                    styles={{
+                      path: { stroke: "#fefefe" },
+                      trail: { stroke: "#1e1e1e" },
+                      text: {
+                        fill: "#fefefe",
+                        fontSize: "24px",
+                        fontWeight: 900,
+                      },
+                    }}
+                  />
+                  <p
+                    style={{
+                      textAlign: "center",
+                      fontSize: "14px",
+                      color: "#fefefe",
+                      marginTop: "5px",
+                    }}
+                  >
+                    Branding projects
+                  </p>
+                </div>
               </div>
             </div>
           </div>
