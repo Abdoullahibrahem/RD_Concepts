@@ -1,3 +1,36 @@
 {
-    "numOfItems": 6
+  "title": "Projects",
+  "description": "Lorem ipsum dolor sit amet consectetur. Urna arcu quisque vel libero nunc faucibus aliquam. Pharetra est nulla adipiscing risus vitae mauris.",
+  "images": [
+    {
+      "image1": {
+        "url": "/img/photo/latest_project1.jpg",
+        "alt": "projects_RD_Img1",
+        "width": 386,
+        "height": 259,
+        "imgTitle": "Betula",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      }
+    },
+    {
+      "image2": {
+        "url": "/img/photo/latest_project2.jpg",
+        "alt": "projects_RD_Img2",
+        "width": 393,
+        "height": 509,
+        "imgTitle": "The Peak",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      }
+    },
+    {
+      "image3": {
+        "url": "/img/photo/latest_project3.jpg",
+        "alt": "projects_RD_Img3",
+        "width": 393,
+        "height": 509,
+        "imgTitle": "Noc burger",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      }
+    }
+  ]
 }

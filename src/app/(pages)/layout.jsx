@@ -10,7 +10,7 @@ const PagesLayouts = ({ children }) => {
       <div id="content">
         {children}
 
-        {/* <Footer layout={"default"} /> */}
+        <Footer layout={"default"} />
       </div>
       {/* content */}
     </>

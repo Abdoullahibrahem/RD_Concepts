@@ -110,7 +110,7 @@ banner
   & .container {
     height: 100%;
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
   }
 
@@ -139,6 +139,7 @@ banner
 
   &.mil-banner-sm {
     height: 600px;
+    margin: 120px 0;
 
     @media screen and (max-width: 1200px) {
       height: 480px;
@@ -1241,6 +1242,7 @@ footer
 ------------------------------------------- */
 footer {
   overflow: hidden;
+  background: linear-gradient(to top, #a6e13033 -30%, #1e1e1e 40%);
 
   & .mil-bg-img {
     height: 150%;
@@ -1250,7 +1252,7 @@ footer {
 
 .mil-footer-logo {
   display: block;
-  text-align: right;
+  // text-align: right;
 
   @media screen and (max-width: 992px) {
     margin-top: 60px;
@@ -1261,22 +1263,19 @@ footer {
 .mil-footer-navigation {
   position: relative;
   display: flex;
-  padding-bottom: 30px;
-  border-bottom: 5px solid $lt-10;
-  border-image: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 1px,
-      $lt-10 1px,
-      $lt-10 3px
-    )
-    5;
+  gap: 40px;
 
   & nav {
     & ul {
       display: flex;
-      align-items: center;
-
+      flex-direction: column;
+      gap: 16px;
+      & p {
+        font-weight: 800;
+        color: white;
+        font-family: $font-2;
+        font-size: 20px;
+      }
       & li {
         list-style-type: none;
         position: relative;
@@ -1287,12 +1286,10 @@ footer {
         }
 
         & a {
-          font-family: $font-1;
+          font-family: $font-2;
           text-decoration: none;
-          text-transform: uppercase;
           color: $light;
-          font-size: 12px;
-          font-weight: 600;
+          font-size: 16px;
           white-space: nowrap;
           transition: $t-sm;
 
@@ -1313,6 +1310,7 @@ footer {
       @media screen and (max-width: 992px) {
         flex-direction: column;
         align-items: flex-start;
+        // justify-content: start;
 
         & li {
           margin: 0;
@@ -1457,11 +1455,10 @@ top panel
         list-style-type: none;
 
         & a {
-          font-family: $font-1;
+          font-family: $font-2;
           text-decoration: none;
           color: $light;
           font-size: 14px;
-          font-weight: 600;
           white-space: nowrap;
           padding: 0 10px;
           transition: $t-sm;
@@ -1496,28 +1493,36 @@ top panel
             opacity: 0;
             position: absolute;
             left: -30px;
+            border-radius: 4px;
             top: 63px;
             transform: translateY(10px) scale(0.98);
             pointer-events: none;
             display: block;
             min-width: 200px;
-            padding: 30px;
-            background-color: $accent;
+            padding: 20px;
+            background-color: black;
             transition: $t-md;
 
             & li {
               position: relative;
-              margin-bottom: 15px;
+              // margin-bottom: 10px;
+              margin-right: 10px;
 
               &:last-child {
                 margin-bottom: 0;
               }
 
               & a {
-                color: $dark;
+                color: $light;
+                padding: 4px;
 
                 &:hover {
                   transform: translateX(5px);
+                  background-color: #b8b8b8;
+                  border-radius: 4px;
+                  padding: 4px;
+                  width: 100%;
+                  text-align: start;
                 }
               }
             }
@@ -2875,7 +2880,6 @@ load more
 ///////////////////////////////////////////////////////////////////////////////////////
 /* ---------------------------- Glass Div ---------------------------- */
 .glass {
-  width: 60%;
   padding: 36px 32px;
   color: white;
   font-size: 16px;
@@ -2887,10 +2891,11 @@ load more
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 .glass-cta {
-  display: flex;
-  justify-content: end;
+  display: inline-block;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-align: center;
+  width: 100%;
 }
 
 /* ---------------------------- About Section ---------------------------- */
@@ -2917,19 +2922,19 @@ h3 {
   color: $light;
   font-size: 31px;
 }
-.responsive-img {
-  width: 100%;
-  height: auto;
+
+/* ---------------------------- Projects Section ---------------------------- */
+.projects-description {
+  background-color: #ffffff;
+}
+.gap-3 {
+  gap: 2rem;
 }
 
-@media (max-width: 768px) {
-  .responsive-img {
-    width: 75%;
-  }
+/* ---------------------------- footer ---------------------------- */
+.icon_gap-1 {
+  gap: 0.6rem;
 }
-
-@media (max-width: 480px) {
-  .responsive-img {
-    width: 50%;
-  }
+.icon_gap-2 {
+  gap: 1rem;
 }

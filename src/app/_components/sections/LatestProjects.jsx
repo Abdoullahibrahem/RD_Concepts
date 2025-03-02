@@ -1,55 +1,99 @@
-import Data from "@data/sections/latest-projects.json";
+import Image from "next/image";
+import Data from "../../../data/sections/latest-projects.json";
 import Link from "next/link";
 
-const LatestProjectsSection = ( { projects } ) => {
-    const projectRows0 = [];
-
-    for (var i = 0; i < Data.numOfItems; i += 3 ) {
-        projectRows0.push(projects.slice(i, 3 + i));
-    }
-
-    const projectRows = [];
-
-    projectRows0.map((row, row_key) => {
-        var row1_items = [];
-        var row2_items = [];
-        row.map((item, row2_key) => {
-            if ( row2_key < 2 ) {
-                row1_items.push(item);
-            } else {
-                row2_items.push(item);
-            }
-        });
-        projectRows.push(row1_items);
-        projectRows.push(row2_items);
-    });
-
-    return (
-        <>
-            {/* portfolio */}
-            <section>
-                <div className="container-fluid">
-                    <div className="row">
-                        {projectRows.map((row, row_key) => (
-                        <div className="col-md-6 col-lg-3" key={`projects-row-${row_key}`}>
-                            {row.map((item, key) => (
-                            <Link href={`/projects/${item.id}`} key={`projects-item-${key}`} className={row.length == 2 ? "mil-portfolio-item mil-square-item mil-up mil-mb-30" : "mil-portfolio-item mil-long-item mil-up mil-mb-30"}>
-                                <img src={item.image} alt={item.title} />
-                                <div className="mil-project-descr">
-                                    <h4 className="mil-upper mil-mb-20">{item.title}</h4>
-                                    <div className="mil-divider-sm mil-mb-20"></div>
-                                    <p>{item.short}</p>
-                                </div>
-                            </Link>
-                            ))}
-                        </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-            {/* blog end */}
-        </>
-    );
+const LatestProjectsSection = () => {
+  return (
+    <>
+      <section>
+        <div className="container mil-p-120-90">
+          <div className="mil-mb-10 d-flex justify-content-between align-items-center mb-5">
+            <h2
+              className="mil-upper mil-up"
+              dangerouslySetInnerHTML={{ __html: Data.title }}
+              style={{ fontWeight: 900 }}
+            />
+            <Link className="mil-button-secondary px-md-5 p-3" href="/">
+              View More
+            </Link>
+          </div>
+          <div className="d-md-flex gap-3">
+            <div className="d-flex flex-column justify-content-between">
+              <div className="projects-description px-5 py-5">
+                <p dangerouslySetInnerHTML={{ __html: Data.description }} />
+              </div>
+              <div>
+                <Image
+                  src={Data.images[0].image1.url}
+                  width={Data.images[0].image1.width}
+                  height={Data.images[0].image1.height}
+                  alt={Data.images[0].image1.alt}
+                  sizes="100vw"
+                ></Image>
+                <h4
+                  className="mil-upper mil-up "
+                  dangerouslySetInnerHTML={{
+                    __html: Data.images[0].image1.imgTitle,
+                  }}
+                  style={{ fontWeight: 900, color: "#ffffff" }}
+                />
+                <p
+                  className="mil-light-soft"
+                  dangerouslySetInnerHTML={{
+                    __html: Data.images[0].image1.description,
+                  }}
+                />
+              </div>
+            </div>
+            <div>
+              <Image
+                src={Data.images[1].image2.url}
+                width={Data.images[1].image2.width}
+                height={Data.images[1].image2.height}
+                alt={Data.images[1].image2.alt}
+                sizes="100vw"
+              ></Image>
+              <h4
+                className="mil-upper mil-up "
+                dangerouslySetInnerHTML={{
+                  __html: Data.images[1].image2.imgTitle,
+                }}
+                style={{ fontWeight: 900, color: "#ffffff" }}
+              />
+              <p
+                className="mil-light-soft"
+                dangerouslySetInnerHTML={{
+                  __html: Data.images[1].image2.description,
+                }}
+              />
+            </div>
+            <div>
+              <Image
+                src={Data.images[2].image3.url}
+                width={Data.images[2].image3.width}
+                height={Data.images[2].image3.height}
+                alt={Data.images[2].image3.alt}
+                sizes="100vw"
+              ></Image>
+              <h4
+                className="mil-upper mil-up "
+                dangerouslySetInnerHTML={{
+                  __html: Data.images[2].image3.imgTitle,
+                }}
+                style={{ fontWeight: 900, color: "#ffffff" }}
+              />
+              <p
+                className="mil-light-soft"
+                dangerouslySetInnerHTML={{
+                  __html: Data.images[2].image3.description,
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default LatestProjectsSection;

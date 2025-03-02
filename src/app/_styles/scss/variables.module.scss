@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 
-$font-1: "Sora", sans-serif;
-$font-2: "Caveat", cursive;
+@font-face {
+  font-family: "Header";
+  src: url("/fonts/kobuzan-cy-grotesk-grand-dark.otf") format("opentype");
+  font-weight: 100 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Text";
+  src: url("/fonts/antikor-mono/Taner\ Ardali\ \ Antikor\ Text\ Regular.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+$font-1: "Header";
+$font-2: "Text";
 
 $dark: #1e1e1e;
 $light: rgba(255, 255, 255, 1);
@@ -43,10 +57,10 @@ $gs-80: rgba(51, 51, 51, 1);
 $gs-90: rgba(26, 26, 26, 1);
 $gs-95: rgba(13, 13, 13, 1);
 
-$h1: 60px;
-$h2: 46px;
+$h1: 39px;
+$h2: 32px;
 $h3: 26px;
-$h4: 22px;
+$h4: 20px;
 $h5: 18px;
 $h6: 15px;
 

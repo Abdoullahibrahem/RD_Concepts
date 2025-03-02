@@ -1,0 +1,18 @@
+{
+  "HeroImage": {
+    "url": "/img/AboutPage/Header.png",
+    "alt": "About RD Hero"
+  },
+  "aboutImg1": {
+    "url": "/img/AboutPage/about_img1.jpg",
+    "width": 488,
+    "height": 404,
+    "alt": "About RD image 1"
+  },
+  "aboutImg2": {
+    "url": "/img/AboutPage/about_img2.jpg",
+    "width": 488,
+    "height": 404,
+    "alt": "About RD image 2"
+  }
+}

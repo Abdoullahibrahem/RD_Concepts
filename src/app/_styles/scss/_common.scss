@@ -15,7 +15,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: $font-1;
+  // font-family: $font-1;
   font-size: $text;
   font-weight: 400;
   color: $dt-70;
@@ -27,6 +27,10 @@ body {
   @media screen and (max-width: 768px) {
     font-size: $text - 1px;
   }
+}
+p,
+a {
+  font-family: $font-2;
 }
 
 .mil-wrapper {
@@ -110,7 +114,7 @@ h2,
   }
 
   @media screen and (max-width: 576px) {
-    font-size: $h2 - 20px;
+    font-size: $h2 - 14px;
   }
 }
 
@@ -553,18 +557,17 @@ button
 }
 .mil-button-secondary {
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
-  padding: 0 50px;
   max-width: 220px;
   height: 40px;
   font-weight: 600;
   transition: $t-sm;
-  font-size: 16px;
+  // font-size: 16px;
   border-radius: 18px;
 
   &.mil-transparent-button {

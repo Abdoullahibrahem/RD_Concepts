@@ -4,6 +4,8 @@ import Link from "next/link";
 import AppData from "@data/app.json";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DefaultHeader = () => {
   const [toggle, setToggle] = useState(false);
@@ -51,14 +53,14 @@ const DefaultHeader = () => {
                       <Link
                         href={item.link}
                         onClick={
-                          item.children.length > 0
+                          item.children?.length > 0
                             ? (e) => handleSubMenuClick(index, e)
                             : null
                         }
                       >
                         {item.label}
                       </Link>
-                      {item.children.length > 0 && (
+                      {item.children?.length > 0 && (
                         <ul
                           className={
                             activeSubMenu === index ? "mil-active" : ""
@@ -84,8 +86,12 @@ const DefaultHeader = () => {
 
             {/* right buttons */}
             <div className="mil-top-panel-buttons">
-              <Link href="/contact" className="mil-button mil-sm">
+              <Link href="/contact" className="mil-button mil-sm ">
                 Contact Us
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ fontSize: "14px", marginLeft: "5px" }}
+                />
               </Link>
 
               <div

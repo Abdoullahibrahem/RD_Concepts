@@ -21,57 +21,66 @@
         "children": []
       },
       {
-        "label": "Services",
-        "link": "/services",
-        "children": []
+        "label": "About Us",
+        "link": "/about",
+        "children": 0
       },
       {
-        "label": "Projects",
-        "link": "/projects",
+        "label": "Services",
+        "link": "/services",
         "children": [
           {
-            "label": "Projects Grid",
-            "link": "/projects"
+            "label": "Interior",
+            "link": "/Interior"
           },
           {
-            "label": "Single Project",
-            "link": "/projects/project-1"
+            "label": "Exterior",
+            "link": "/Exterior"
+          },
+          {
+            "label": "Branding",
+            "link": "/Branding"
           }
         ]
       },
       {
-        "label": "About Us",
-        "link": "/about",
-        "children": 0
+        "label": "Projects",
+        "link": "/projects"
       }
     ]
   },
   "footer": {
     "logo": {
-      "image": "/img/logo/logo-light.png",
+      "image": "/img/logo/RDlogo-footer.png",
       "alt": "Logo"
     },
-    "copy": "© 2023 Ruizarch. All rights reserved.",
-    "menu": [
+    "title": "Lorem ipsum dolor sit amet consectetur.",
+    "menu1": [
       {
-        "label": "About",
+        "label": "About Us",
         "link": "/about"
-      },
-      {
-        "label": "Services",
-        "link": "/services"
       },
       {
         "label": "Projects",
         "link": "/projects"
       },
       {
-        "label": "Blog",
-        "link": "/blog"
-      },
-      {
         "label": "Contact",
         "link": "/contact"
+      }
+    ],
+    "menu2": [
+      {
+        "label": "Interior",
+        "link": "/Interior"
+      },
+      {
+        "label": "Exterior",
+        "link": "/Exterior"
+      },
+      {
+        "label": "Branding",
+        "link": "/Branding"
       }
     ]
   },
