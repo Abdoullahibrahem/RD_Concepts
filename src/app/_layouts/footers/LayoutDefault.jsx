@@ -22,17 +22,16 @@ const DefaultFooter = () => {
         <div className="container mt-5">
           <div className="row align-items-baseline ">
             <div className="col-lg-5 mb-5 mb-lg-0">
-              <Link href="/" className=" mil-up mil-mb-30">
+              <Link href="/" className="mil-mb-30">
                 <Image
                   src={AppData.footer.logo.image}
                   alt={AppData.footer.logo.alt}
                   width={64}
                   height={64}
-                  // style={{ width: "10px" }}
                 />
               </Link>
               <h4
-                className=" mil-up"
+                className=""
                 dangerouslySetInnerHTML={{ __html: AppData.footer.title }}
                 style={{ fontWeight: 900, color: "#ffffff" }}
               />
@@ -40,7 +39,7 @@ const DefaultFooter = () => {
             <div className="col-lg-7">
               <div className="row">
                 <div>
-                  <div className="mil-footer-navigation mil-up justify-content-lg-end">
+                  <div className="mil-footer-navigation justify-content-lg-end">
                     <nav>
                       <ul>
                         <p>Company</p>

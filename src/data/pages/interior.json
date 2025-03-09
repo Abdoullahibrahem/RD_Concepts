@@ -1,0 +1,32 @@
+{
+  "title": "Interior Design",
+  "subtitle1": "Our Philosophy",
+  "subtitle2": "Why choose us?",
+  "images": [
+    {
+      "url": "/img/interiorPage/image1.jpg",
+      "alt": "About_RD_Img1",
+      "width": 286,
+      "height": 446
+    },
+    {
+      "url": "/img/interiorPage/image2.jpg",
+      "alt": "About_RD_Img2",
+      "width": 286,
+      "height": 446
+    },
+    {
+      "url": "/img/interiorPage/image3.jpg",
+      "alt": "About_RD_Img3",
+      "width": 285,
+      "height": 223
+    },
+    {
+      "url": "/img/interiorPage/image4.jpg",
+      "alt": "About_RD_Img3",
+      "width": 285,
+      "height": 223
+    }
+  ],
+  "description": "Lorem ipsum dolor sit amet consectetur. Justo vitae volutpat mi nulla. Tincidunt proin commodo velit elementum et. Non at tempor ultrices facilisis sagittis sodales. Senectus malesuada arcu consequat pulvinar malesuada feugiat. Tincidunt purus malesuada non nisl tortor elit. Lorem duis cursus quisque bibendum lectus. Diam donec laoreet "
+}

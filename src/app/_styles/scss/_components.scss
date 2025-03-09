@@ -139,10 +139,10 @@ banner
 
   &.mil-banner-sm {
     height: 600px;
-    margin: 120px 0;
+    margin-top: 120px;
 
     @media screen and (max-width: 1200px) {
-      height: 480px;
+      height: 100%;
     }
   }
 }
@@ -2689,7 +2689,6 @@ filter
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   & .mil-filter-links {
@@ -2715,23 +2714,23 @@ filter
     }
   }
 
-  &:before {
-    content: "";
-    width: 100%;
-    height: 5px;
-    background-color: transparent;
-    border-bottom: 5px solid $gs-10;
-    border-image: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 1px,
-        $gs-10 1px,
-        $gs-10 3px
-      )
-      5;
-    position: absolute;
-    left: 0;
-  }
+  // &:before {
+  //   content: "";
+  //   width: 100%;
+  //   height: 5px;
+  //   background-color: transparent;
+  //   border-bottom: 5px solid $gs-10;
+  //   border-image: repeating-linear-gradient(
+  //       -45deg,
+  //       transparent,
+  //       transparent 1px,
+  //       $gs-10 1px,
+  //       $gs-10 3px
+  //     )
+  //     5;
+  //   position: absolute;
+  //   left: 0;
+  // }
 
   @media screen and (max-width: 992px) {
     & .mil-filter-links {
@@ -2877,6 +2876,9 @@ load more
     z-index: 0;
   }
 }
+.page-content {
+  margin-top: 140px;
+}
 ///////////////////////////////////////////////////////////////////////////////////////
 /* ---------------------------- Glass Div ---------------------------- */
 .glass {
@@ -2894,7 +2896,7 @@ load more
   display: inline-block;
   text-decoration: underline;
   text-underline-offset: 4px;
-  text-align: center;
+  text-align: end;
   width: 100%;
 }
 

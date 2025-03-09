@@ -31,15 +31,11 @@
         "children": [
           {
             "label": "Interior",
-            "link": "/Interior"
-          },
-          {
-            "label": "Exterior",
-            "link": "/Exterior"
+            "link": "/interior"
           },
           {
             "label": "Branding",
-            "link": "/Branding"
+            "link": "/branding"
           }
         ]
       },
@@ -72,15 +68,11 @@
     "menu2": [
       {
         "label": "Interior",
-        "link": "/Interior"
-      },
-      {
-        "label": "Exterior",
-        "link": "/Exterior"
+        "link": "/interior"
       },
       {
         "label": "Branding",
-        "link": "/Branding"
+        "link": "/branding"
       }
     ]
   },
@@ -105,16 +97,12 @@
   "projects": {
     "categories": [
       {
-        "name": "Architecture",
-        "slug": "architecture"
+        "name": "Resedential",
+        "slug": "resedential"
       },
       {
-        "name": "Interior",
-        "slug": "interior"
-      },
-      {
-        "name": "Decor",
-        "slug": "decor"
+        "name": "Commerical",
+        "slug": "commerical"
       }
     ]
   },
